@@ -37,18 +37,7 @@ flowise-fastapi/
 └── readme-gemini.md      # Detailed project memory/documentation
 ```
 
-## 🛠 Installation
 
-1. **Clone the repository:**
-   ```bash
-   git clone https://github.com/bahakizil/fastapi-reactflow.git
-   cd fastapi-reactflow
-   ```
-
-2. **Install dependencies:**
-   ```bash
-   pip install -r requirements.txt
-   ```
 
 3. **Set up environment variables:**
    ```bash
@@ -78,10 +67,7 @@ flowise-fastapi/
 
 ### Provider Nodes (Create LangChain objects)
 - **OpenAIChat**: OpenAI GPT models
-- **GoogleGemini**: Google Gemini models (requires langchain-google-genai)
 - **TavilySearch**: Web search via Tavily API
-- **GoogleSearchTool**: Google search via SerpAPI
-- **WikipediaTool**: Wikipedia search
 - **PromptTemplate**: Chat prompt templates
 - **AgentPrompt**: ReAct agent prompts
 - **ConversationMemory**: Conversation buffer memory
@@ -130,9 +116,7 @@ flowise-fastapi/
 }
 ```
 
-## 🏗 Node Architecture
 
-### Creating Custom Nodes
 
 1. **Provider Node Example:**
 ```python
@@ -167,38 +151,3 @@ class MyCustomNode(ProviderNode):
 - **ProviderNode**: Creates LangChain objects from scratch (LLMs, Tools, Prompts)
 - **ProcessorNode**: Combines multiple LangChain objects (Agents, Chains)
 - **TerminatorNode**: Processes final outputs (Parsers, Formatters)
-
-## 📋 Development Status
-
-- ✅ Core architecture and node system
-- ✅ Dynamic node discovery
-- ✅ Workflow execution engine
-- ✅ RESTful API endpoints
-- ✅ 12 working nodes across all categories
-- ⚠️ Frontend integration (planned)
-- ⚠️ WebSocket streaming (planned)
-- ⚠️ Database persistence (planned)
-
-## 🤝 Contributing
-
-1. Fork the repository
-2. Create a feature branch: `git checkout -b feature/amazing-feature`
-3. Add your custom nodes or improvements
-4. Test your changes
-5. Commit your changes: `git commit -m 'Add amazing feature'`
-6. Push to the branch: `git push origin feature/amazing-feature`
-7. Open a Pull Request
-
-## 📜 License
-
-This project is licensed under the MIT License - see the LICENSE file for details.
-
-## 🙏 Acknowledgments
-
-- Inspired by [Flowise](https://github.com/FlowiseAI/Flowise)
-- Built with [FastAPI](https://fastapi.tiangolo.com/)
-- Powered by [LangChain](https://python.langchain.com/)
-
----
-
-**Ready to build powerful AI workflows? Start exploring!** 🚀
